@@ -1,9 +1,9 @@
 
-import React from 'react';
+import { FC } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Download } from "lucide-react";
-const Resume: React.FC = () => {
+const Resume: FC = () => {
   // Replace work experiences with interests and technologies
   const interests = [{
     title: "Web Development",
@@ -11,7 +11,8 @@ const Resume: React.FC = () => {
     description: "Passionate about creating responsive and interactive web applications.",
     technologies: ["HTML5 - Building the structure of web pages", "CSS3 - Styling and responsive design", "Node.js - Backend development", "Data Structures & Algorithms - Problem-solving"]
   }];
-  return <section id="resume" className="bg-white dark:bg-black">
+  return (
+    <section id="resume" className="bg-white dark:bg-black">
       <h2 className="text-2xl md:text-3xl font-bold section-title numbered-heading text-black dark:text-white">
         <span className="text-2xl font-normal text-zinc-950">05.</span> Resume
       </h2>
@@ -24,19 +25,20 @@ const Resume: React.FC = () => {
         </div>
         
         <Button asChild variant="outline" className="border border-black dark:border-white text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/10 py-3 px-5 flex items-center gap-2 whitespace-nowrap">
-          <a href="/resume.pdf" download="Rohan_Shankar_Kusalkar_Resume.pdf">
-            <Download className="w-4 h-4" />
-            Download Resume
+          <a href="/resume" target="_blank">
+            <ArrowRight className="w-4 h-4" />
+            View Resume
           </a>
         </Button>
       </div>
       
       <div className="space-y-6">
-        <iframe src="/resume.pdf#toolbar=0" className="w-full h-96 mb-8 rounded-lg border border-gray-200 dark:border-gray-700 shadow-md hidden md:block font-heading" title="Resume Preview"></iframe>
-        
-        <div className="md:hidden">
-          <p className="text-gray-500 dark:text-gray-400 italic mb-4 text-center font-sans">
-            Resume preview is available on larger screens. Please download to view on mobile.
+        <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 text-center mb-8">
+          <p className="text-gray-700 dark:text-gray-300 mb-4 font-sans">
+            Click the button above to view my complete resume in a new tab.
+          </p>
+          <p className="text-gray-500 dark:text-gray-400 text-sm font-sans">
+            The resume includes detailed information about my education, skills, and projects.
           </p>
         </div>
         
@@ -63,7 +65,8 @@ const Resume: React.FC = () => {
         </h3>
         
         <div className="space-y-6">
-          {interests.map((interest, index) => <Card key={index} className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 shadow-md hover:shadow-lg transition-all">
+          {interests.map((interest, index) => (
+            <Card key={index} className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 shadow-md hover:shadow-lg transition-all">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row justify-between mb-3">
                   <h4 className="text-lg font-semibold text-black dark:text-white font-heading">
@@ -77,13 +80,16 @@ const Resume: React.FC = () => {
                 <p className="text-gray-700 dark:text-gray-300 mb-4 font-sans">{interest.description}</p>
                 
                 <ul className="space-y-2">
-                  {interest.technologies.map((technology, i) => <li key={i} className="flex text-gray-700 dark:text-gray-300 font-sans">
+                  {interest.technologies.map((technology, i) => (
+                    <li key={i} className="flex text-gray-700 dark:text-gray-300 font-sans">
                       <span className="text-black dark:text-white mr-2">▹</span>
                       <span>{technology}</span>
-                    </li>)}
+                    </li>
+                  ))}
                 </ul>
               </CardContent>
-            </Card>)}
+            </Card>
+          ))}
         </div>
         
         <div className="mt-8 p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg shadow-md">
@@ -96,6 +102,7 @@ const Resume: React.FC = () => {
           </p>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default Resume;
