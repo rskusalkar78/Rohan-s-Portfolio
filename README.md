@@ -1,62 +1,142 @@
-Hi there, I'm ROHAN KUSALKAR ! 👋
-Welcome to my corner of GitHub! This repository serves as a central hub for my professional profile, showcasing my skills, projects, and learning journey.
+# CodeStart.dev | Portfolio Website
 
-📄 Resume
-You can find a detailed copy of my resume here (or replace with the actual path to your resume file in this repo, e.g., resume.pdf).
+> Personal portfolio website of **Rohan Shankar Kusalkar**, Software Developer specializing in building exceptional digital experiences.
 
-🛠️ Skills
-Here's a snapshot of my technical toolkit:
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://codestart.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/rohan-kusalkar-455ab1329)
+[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:rkusalkar78@gmail.com)
 
-Programming Languages:
+## 🚀 About
 
-[e.g., Python, JavaScript, Java, C++, etc.]
+This is my personal portfolio website built with modern web technologies to showcase my skills, projects, and professional journey as a software developer. The site features a clean, responsive design with smooth animations and an intuitive user experience.
 
-Web Development:
+## 🛠️ Tech Stack
 
-Frontend: [e.g., HTML, CSS, React, Angular, Vue.js, SASS, Bootstrap]
+### Frontend
 
-Backend: [e.g., Node.js, Express, Django, Flask, Ruby on Rails, ASP.NET]
+- **React 18** - Modern React with hooks and functional components
+- **TypeScript** - Type-safe JavaScript for better development experience
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework for rapid styling
 
-Databases: [e.g., SQL (MySQL, PostgreSQL), NoSQL (MongoDB, Firebase)]
+### UI Components
 
-App Development:
+- **shadcn/ui** - Beautiful, accessible component library built on Radix UI
+- **Radix UI** - Low-level UI primitives for building design systems
+- **Lucide React** - Beautiful & consistent icon library
+- **Framer Motion** - Production-ready motion library for React
 
-[e.g., Android (Kotlin/Java), iOS (Swift), React Native, Flutter]
+### State Management & Data Fetching
 
-Tools & Technologies:
+- **TanStack Query** - Powerful data synchronization for React
+- **React Hook Form** - Performant, flexible forms with easy validation
+- **Zod** - TypeScript-first schema validation
 
-[e.g., Git, Docker, AWS, Azure, Google Cloud Platform, VS Code, npm, Yarn]
+### Development Tools
 
-🚀 Projects (Coming Soon!)
-I'm currently working on some exciting projects that I'll be showcasing here soon! Stay tuned for updates on:
+- **ESLint** - Code linting and formatting
+- **PostCSS** - CSS processing and optimization
+- **Autoprefixer** - Automatic CSS vendor prefixing
 
-[Brief description of Project 1, e.g., "A full-stack e-commerce application using React and Node.js."]
+## 📁 Project Structure
 
-[Brief description of Project 2, e.g., "A mobile expense tracker built with Flutter."]
+```
+├── public/
+│   ├── resume.pdf          # Professional resume
+│   ├── robots.txt          # SEO configuration
+│   └── placeholder.svg     # Placeholder assets
+├── src/
+│   ├── components/         # Reusable UI components
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions and configurations
+│   ├── pages/             # Page components
+│   ├── App.tsx            # Main application component
+│   └── main.tsx           # Application entry point
+├── package.json           # Dependencies and scripts
+├── tailwind.config.ts     # Tailwind CSS configuration
+├── tsconfig.json          # TypeScript configuration
+└── vite.config.ts         # Vite build configuration
+```
 
-[Any other projects you'd like to mention as "coming soon"]
+## 🚀 Getting Started
 
-📚 Learning Journey
-I'm a firm believer in continuous learning. Here are some of the courses I've been taking to expand my knowledge in web and app development:
+### Prerequisites
 
-Web Development Courses:
-[Course Name 1] by [Platform/Instructor] - [Briefly describe what you learned, e.g., "Mastered responsive design principles and modern CSS techniques."]
+- Node.js (v18 or higher)
+- npm or yarn package manager
 
-[Course Name 2] by [Platform/Instructor] - [Briefly describe what you learned, e.g., "Deep dive into server-side programming with Node.js and Express."]
+### Installation
 
-[Add more as needed]
+1. **Clone the repository**
 
-App Development Courses:
-[Course Name 1] by [Platform/Instructor] - [Briefly describe what you learned, e.g., "Learned the fundamentals of Android app development with Kotlin."]
+   ```bash
+   git clone https://github.com/rohanshankarkusalkar/portfolio.git
+   cd portfolio
+   ```
 
-[Course Name 2] by [Platform/Instructor] - [Briefly describe what you learned, e.g., "Built cross-platform mobile apps using Flutter and Dart."]
+2. **Install dependencies**
 
-[Add more as needed]
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-✉️ Get in Touch!
-Feel free to connect with me:
+3. **Start the development server**
 
-LinkedIn: www.linkedin.com/in/rohan-kusalkar-455ab1329
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Email: rkusalkar78@gmail.com
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to view the application.
 
+## 📜 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build in development mode
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint for code quality
+
+## 🎨 Features
+
+- **Responsive Design** - Optimized for all device sizes
+- **Modern UI/UX** - Clean, professional interface with smooth animations
+- **Type Safety** - Full TypeScript implementation for robust code
+- **Performance Optimized** - Fast loading times with Vite and modern React
+- **SEO Friendly** - Proper meta tags and semantic HTML structure
+- **Accessible** - Built with accessibility best practices using Radix UI
+
+## 📄 Resume
+
+You can view and download my professional resume directly from the website or access it [here](./public/resume.pdf).
+
+## 🤝 Contributing
+
+While this is a personal portfolio project, I welcome suggestions and feedback! Feel free to:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -am 'Add some improvement'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+**Rohan Shankar Kusalkar**
+
+- 🌐 Website: [CodeStart.dev](https://codestart.dev)
+- 💼 LinkedIn: [rohan-kusalkar-455ab1329](https://www.linkedin.com/in/rohan-kusalkar-455ab1329)
+- 📧 Email: [rkusalkar78@gmail.com](mailto:rkusalkar78@gmail.com)
+- 🐦 Twitter: [@rohanshankarkusalkar](https://twitter.com/rohanshankarkusalkar)
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+⭐ **If you found this project helpful, please consider giving it a star!**
