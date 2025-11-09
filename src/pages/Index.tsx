@@ -14,7 +14,7 @@ import SocialSidebar from "@/components/SocialSidebar";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <div className="absolute inset-0 bg-white/70 dark:bg-black/80 backdrop-blur-sm z-0"></div>
+      <div className="absolute inset-0 bg-white/80 dark:bg-black/90 backdrop-blur-sm z-0"></div>
       <Navigation />
       <SocialSidebar />
       
